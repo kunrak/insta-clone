@@ -1,11 +1,23 @@
-import { Link } from "react-router-dom";
+import { Box, Container, Flex } from "@chakra-ui/react";
+import FeedPosts from "../../Components/FeedPosts/FeedPosts";
 
 function HomePage() {
   return (
-    <>
-      <div>HomePage</div>
-      <Link to="/auth">Auth</Link>
-    </>
+    <Container maxW={"container.lg"}>
+      <Flex gap={20}>
+        <Box flex={2} py={10}>
+          <FeedPosts />
+        </Box>
+        <Box
+          flex={3}
+          mr={20}
+          maxW={"300px"}
+          display={{ base: "none", md: "block" }}
+        >
+          Suggested
+        </Box>
+      </Flex>
+    </Container>
   );
 }
 
