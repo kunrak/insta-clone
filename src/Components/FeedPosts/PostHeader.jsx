@@ -1,4 +1,4 @@
-import { Avatar, Box, Flex } from "@chakra-ui/react";
+import { Avatar, Box, Flex, Text } from "@chakra-ui/react";
 
 function PostHeader() {
   return (
@@ -16,7 +16,19 @@ function PostHeader() {
             <Box>• 1w ago</Box>
           </Flex>
         </Flex>
-        <Box></Box>
+        <Box cursor={"pointer"}>
+          <Text
+            fontSize={12}
+            color={"blue.500"}
+            fontWeight={"bold"}
+            _hover={{
+              color: "white",
+            }}
+            transition={"0.2s ease-in-out"}
+          >
+            Unfollow
+          </Text>
+        </Box>
       </Flex>
     </>
   );

@@ -21,6 +21,7 @@ function Sidebar() {
       px={{ base: 2, md: 4 }}
       top={0}
       left={0}
+      position={"sticky"}
     >
       <Flex direction={"column"} gap={10} w={"full"} height={"full"}>
         <Link
